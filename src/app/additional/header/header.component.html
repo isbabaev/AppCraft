@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="header">
+        <div class="left-side">
+            <div class="logo">
+                <img src="../../../assets/images/navbar-logo.svg"
+                    alt="AppCraft">
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="navbar">
+                <ul class="navbar-ul">
+                    <li class="navbar-li main">Главная</li>
+                    <li class="navbar-li services">Услуги</li>
+                    <li class="navbar-li portfolio">Портфолио</li>
+                    <li class="navbar-li articles">Статьи</li>
+                    <li class="navbar-li about-us">О нас</li>
+                    <li class="navbar-li contacts">Контакты</li>
+                </ul>
+            </div>
+            <div class="menu-and-phone">
+                <div class="menu"
+                    (mouseleave)="menuIconStyle=false"
+                    (mouseenter)="menuIconStyle=true">
+                    <div class="menu-icon"
+                        [ngSwitch]="menuIconStyle">
+                        <img src="../../../assets/images/nabar-menu-blue.png"
+                            *ngSwitchCase="true">
+                        <img src="../../../assets/images/navbar-menu-gray.png"
+                            *ngSwitchDefault>
+                    </div>
+                    <span class="menu-title">Меню</span>
+                </div>
+                <div class="phone">
+                    <span>8(499)322-82-50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
